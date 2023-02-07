@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5d013d916b803552dd5f2ac656f4a344 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+			<div><h1 style="margin-left:50px">Regionalne instalacje przetwarzania odpadów komunalnych</h1></div>
+            <div class="folium-map" id="map_5d013d916b803552dd5f2ac656f4a344" ></div>
+			<img src="legenda.jpg" height="750" width="1500"></img>
+        
+</body>
+<script>
+    
+    
+            var map_5d013d916b803552dd5f2ac656f4a344 = L.map(
+                "map_5d013d916b803552dd5f2ac656f4a344",
+                {
+                    center: [49.85790439, 19.9680245],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    zoomStarts: 2,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60313bdc9861315a414f5e584269fd8f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var marker_d9fe0db48cf413c2e068ff05302fa63b = L.marker(
+                [50.04011512, 19.3130636],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_feb76ebaf358d079d9cb011fa6673be1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_d9fe0db48cf413c2e068ff05302fa63b.setIcon(icon_feb76ebaf358d079d9cb011fa6673be1);
+        
+    
+        var popup_03be285d8ea0ef3366fb07606e860c8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88c166791d1af1156051bc123dd8eda0 = $(`<div id="html_88c166791d1af1156051bc123dd8eda0" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja do mechaniczno-biologicznego przetwarzania zmieszancyh odpadów w Oświęcimiu ul. Nadwiślańska 36 _____________  Podmiot ekspoatujący intalację: Składowisko Odpadów Komunalnych Sp. z. o . o w Oświęciumiu ul. Nadwiślańska 36 32-600 Oświęcium _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 11 _____________  Maksymalne moce przerobowe części mechanicznej: 30</div>`)[0];
+            popup_03be285d8ea0ef3366fb07606e860c8e.setContent(html_88c166791d1af1156051bc123dd8eda0);
+        
+
+        marker_d9fe0db48cf413c2e068ff05302fa63b.bindPopup(popup_03be285d8ea0ef3366fb07606e860c8e)
+        ;
+
+        
+    
+    
+            marker_d9fe0db48cf413c2e068ff05302fa63b.bindTooltip(
+                `<div>
+                     Instalacja do mechaniczno-biologicznego przetwarzania zmieszancyh odpadów w Oświęcimiu ul. Nadwiślańska 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b7a0b7163d19dd857effd0e6f2c000a = L.marker(
+                [50.29397515, 19.49967937],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_73b078fc350e6e18a8c7511914513caa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_8b7a0b7163d19dd857effd0e6f2c000a.setIcon(icon_73b078fc350e6e18a8c7511914513caa);
+        
+    
+        var popup_f6b56663156146493f9cdc0c2f1b72f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b3ca9a090664cffd629c983d2209d0b = $(`<div id="html_3b3ca9a090664cffd629c983d2209d0b" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja do mechaniczno-biologicznego przetwarzania zmieszancyh odpadów w Ujkowie Starym, gm. bolesław, ul. Osadowa 1 _____________  Podmiot ekspoatujący intalację: Zakład  Gospodarki Komunalnej  Sp.  z  o.o. 32-329  Bolesław  ul. Osadowa 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 21 _____________  Maksymalne moce przerobowe części mechanicznej: 41</div>`)[0];
+            popup_f6b56663156146493f9cdc0c2f1b72f9.setContent(html_3b3ca9a090664cffd629c983d2209d0b);
+        
+
+        marker_8b7a0b7163d19dd857effd0e6f2c000a.bindPopup(popup_f6b56663156146493f9cdc0c2f1b72f9)
+        ;
+
+        
+    
+    
+            marker_8b7a0b7163d19dd857effd0e6f2c000a.bindTooltip(
+                `<div>
+                     Instalacja do mechaniczno-biologicznego przetwarzania zmieszancyh odpadów w Ujkowie Starym, gm. bolesław, ul. Osadowa 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dc1233b85ad574c41e72482581f9615 = L.marker(
+                [49.98497705, 20.00413305],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_86399ef6af8ccb9c90689188ea35a8c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_4dc1233b85ad574c41e72482581f9615.setIcon(icon_86399ef6af8ccb9c90689188ea35a8c5);
+        
+    
+        var popup_ef9b163eef5e03ee49a72fdc65591942 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dfbc26f7de589237498bb94cbafd5b4 = $(`<div id="html_6dfbc26f7de589237498bb94cbafd5b4" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja do mechaniczno-biologicznego przetwarzania zmieszancyh odpadów  komunalnych w Krakowie ul. Krzemienicka 40 _____________  Podmiot ekspoatujący intalację: Miejskie Przedsiębiorstwo Oczyszczania Sp. z o.o. 31-580  Kraków,  ul. Nowohucka 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 57 _____________  Maksymalne moce przerobowe części mechanicznej: 100</div>`)[0];
+            popup_ef9b163eef5e03ee49a72fdc65591942.setContent(html_6dfbc26f7de589237498bb94cbafd5b4);
+        
+
+        marker_4dc1233b85ad574c41e72482581f9615.bindPopup(popup_ef9b163eef5e03ee49a72fdc65591942)
+        ;
+
+        
+    
+    
+            marker_4dc1233b85ad574c41e72482581f9615.bindTooltip(
+                `<div>
+                     Instalacja do mechaniczno-biologicznego przetwarzania zmieszancyh odpadów  komunalnych w Krakowie ul. Krzemienicka 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7275b44a7d480bdd7bce46a8ea1d9a32 = L.marker(
+                [49.96782546, 19.16129348],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_4990a94e49b4887883c9f4dfb513fe40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_7275b44a7d480bdd7bce46a8ea1d9a32.setIcon(icon_4990a94e49b4887883c9f4dfb513fe40);
+        
+    
+        var popup_0fc844e2fe39499655c887f24579b16e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51c9864a2e36f50290751f3f7bd9d019 = $(`<div id="html_51c9864a2e36f50290751f3f7bd9d019" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w Brzeszczach,  ul.  Graniczna 48 _____________  Podmiot ekspoatujący intalację: Agencja Komunalna Sp. z  o.o.  ul.  Kościelna  7, 32-620 Brzeszcze _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 20 _____________  Maksymalne moce przerobowe części mechanicznej: 50</div>`)[0];
+            popup_0fc844e2fe39499655c887f24579b16e.setContent(html_51c9864a2e36f50290751f3f7bd9d019);
+        
+
+        marker_7275b44a7d480bdd7bce46a8ea1d9a32.bindPopup(popup_0fc844e2fe39499655c887f24579b16e)
+        ;
+
+        
+    
+    
+            marker_7275b44a7d480bdd7bce46a8ea1d9a32.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w Brzeszczach,  ul.  Graniczna 48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_477bb8c2fcaf0239bef3c99cf2892a3b = L.marker(
+                [50.03019081, 20.04442633],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_4c3bcf75865b8712044cf8c85124f8ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_477bb8c2fcaf0239bef3c99cf2892a3b.setIcon(icon_4c3bcf75865b8712044cf8c85124f8ea);
+        
+    
+        var popup_72ebf4fee4bbab31ee853b53394a5c8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2adbfaa73c22f8aeae6e615c115d3ea6 = $(`<div id="html_2adbfaa73c22f8aeae6e615c115d3ea6" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Krakowie, ul. Półłanki 64 _____________  Podmiot ekspoatujący intalację: Remondis Kraków Sp. z o.o., ul. Półłanki 64 30-740 Kraków _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 34.359 _____________  Maksymalne moce przerobowe części mechanicznej: 128</div>`)[0];
+            popup_72ebf4fee4bbab31ee853b53394a5c8e.setContent(html_2adbfaa73c22f8aeae6e615c115d3ea6);
+        
+
+        marker_477bb8c2fcaf0239bef3c99cf2892a3b.bindPopup(popup_72ebf4fee4bbab31ee853b53394a5c8e)
+        ;
+
+        
+    
+    
+            marker_477bb8c2fcaf0239bef3c99cf2892a3b.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Krakowie, ul. Półłanki 64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10ab50d1efb1e7c6f7cfc387389b5a12 = L.marker(
+                [50.03213518, 20.0615914],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_77cedc65193b553ea055309c122f7eee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_10ab50d1efb1e7c6f7cfc387389b5a12.setIcon(icon_77cedc65193b553ea055309c122f7eee);
+        
+    
+        var popup_8c5c2d35a48c53d3494a3fdbafa056e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2528fd8f7f26957a9c690d65f7b1840d = $(`<div id="html_2528fd8f7f26957a9c690d65f7b1840d" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Krakowie, ul. Nad Drwiną _____________  Podmiot ekspoatujący intalację: MIKI  Recykling  Sp.  z o.o. ul. Nad Drwiną 33 30-741 Kraków _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 12 _____________  Maksymalne moce przerobowe części mechanicznej: 144</div>`)[0];
+            popup_8c5c2d35a48c53d3494a3fdbafa056e8.setContent(html_2528fd8f7f26957a9c690d65f7b1840d);
+        
+
+        marker_10ab50d1efb1e7c6f7cfc387389b5a12.bindPopup(popup_8c5c2d35a48c53d3494a3fdbafa056e8)
+        ;
+
+        
+    
+    
+            marker_10ab50d1efb1e7c6f7cfc387389b5a12.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Krakowie, ul. Nad Drwiną
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dd7970526c095cbd6f7578099e1e76d = L.marker(
+                [49.87289149, 19.4330998],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_bdfb448e1689dbfb9ace6d6e6a375b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_4dd7970526c095cbd6f7578099e1e76d.setIcon(icon_bdfb448e1689dbfb9ace6d6e6a375b66);
+        
+    
+        var popup_037fb9b60a36a8e597598abd8d67b123 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9306b661bac975da9203ca585693e03 = $(`<div id="html_c9306b661bac975da9203ca585693e03" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych w Choczni, ul. T. Kościuszki 304. _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Komunalne „EKO” Sp. z o.o.,  ul.  T.  Kościuszki 304, 34 – 123 Chocznia _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 38 _____________  Maksymalne moce przerobowe części mechanicznej: 50</div>`)[0];
+            popup_037fb9b60a36a8e597598abd8d67b123.setContent(html_c9306b661bac975da9203ca585693e03);
+        
+
+        marker_4dd7970526c095cbd6f7578099e1e76d.bindPopup(popup_037fb9b60a36a8e597598abd8d67b123)
+        ;
+
+        
+    
+    
+            marker_4dd7970526c095cbd6f7578099e1e76d.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych w Choczni, ul. T. Kościuszki 304.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06496ebf0e27e5635551a37d40ad9189 = L.marker(
+                [50.04312059, 21.0251581],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_e5562f435f7dbbda04c11d570f50d9a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_06496ebf0e27e5635551a37d40ad9189.setIcon(icon_e5562f435f7dbbda04c11d570f50d9a1);
+        
+    
+        var popup_71f0a15a6e2fa571ce08fe19a619a4e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4198348a65feed3d14d8ff45447a400a = $(`<div id="html_4198348a65feed3d14d8ff45447a400a" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Tarnowie, ul. Komunalna 29 _____________  Podmiot ekspoatujący intalację: Miejskie Przedsiębiorstwo Gospodarki Komunalnej Sp. z o.o. 33-100 Tarnów ul. Okrężna 11 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 15 _____________  Maksymalne moce przerobowe części mechanicznej: 45</div>`)[0];
+            popup_71f0a15a6e2fa571ce08fe19a619a4e0.setContent(html_4198348a65feed3d14d8ff45447a400a);
+        
+
+        marker_06496ebf0e27e5635551a37d40ad9189.bindPopup(popup_71f0a15a6e2fa571ce08fe19a619a4e0)
+        ;
+
+        
+    
+    
+            marker_06496ebf0e27e5635551a37d40ad9189.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Tarnowie, ul. Komunalna 29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c886a1360c2f2736d74eabb31948fb7b = L.marker(
+                [50.04381281, 21.01989522],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_c3a7f7194848a25fccd084759fd4eb36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_c886a1360c2f2736d74eabb31948fb7b.setIcon(icon_c3a7f7194848a25fccd084759fd4eb36);
+        
+    
+        var popup_c7008ba5c77d9720562eb57cafe8d2d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58979a7701dcfe6c50f082817bef10e8 = $(`<div id="html_58979a7701dcfe6c50f082817bef10e8" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Tarnowie, ul. Komunalna 20A _____________  Podmiot ekspoatujący intalację: TRANS-FORMERS® KARPATIA Sp. z o.o. 33-100 Tarnów, ul. Odległa 8 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 18 _____________  Maksymalne moce przerobowe części mechanicznej: 51</div>`)[0];
+            popup_c7008ba5c77d9720562eb57cafe8d2d0.setContent(html_58979a7701dcfe6c50f082817bef10e8);
+        
+
+        marker_c886a1360c2f2736d74eabb31948fb7b.bindPopup(popup_c7008ba5c77d9720562eb57cafe8d2d0)
+        ;
+
+        
+    
+    
+            marker_c886a1360c2f2736d74eabb31948fb7b.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Tarnowie, ul. Komunalna 20A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a44f21a38c08a314d6c8c18afc73adb5 = L.marker(
+                [49.85790631, 19.9679749],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_b204122c83d2486cca35003930bd9100 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_a44f21a38c08a314d6c8c18afc73adb5.setIcon(icon_b204122c83d2486cca35003930bd9100);
+        
+    
+        var popup_a5acdb51444d3db5e8a74dc5cbf8ba05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adae7872234cc23cbbe9b4d5f60543e6 = $(`<div id="html_adae7872234cc23cbbe9b4d5f60543e6" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Zakład  Zagospodarowania Odpadów w Myślenicach, ul. Kornela Ujejskiego 341 _____________  Podmiot ekspoatujący intalację: Zakład  Utylizacji Odpadów Sp. z o.o. ul. Juliusza Słowackiego 82 32-400 Myślenice _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 60 _____________  Maksymalne moce przerobowe części mechanicznej: 60</div>`)[0];
+            popup_a5acdb51444d3db5e8a74dc5cbf8ba05.setContent(html_adae7872234cc23cbbe9b4d5f60543e6);
+        
+
+        marker_a44f21a38c08a314d6c8c18afc73adb5.bindPopup(popup_a5acdb51444d3db5e8a74dc5cbf8ba05)
+        ;
+
+        
+    
+    
+            marker_a44f21a38c08a314d6c8c18afc73adb5.bindTooltip(
+                `<div>
+                     Zakład  Zagospodarowania Odpadów w Myślenicach, ul. Kornela Ujejskiego 341
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eedf5e1808f1961b7337c45364dc09a4 = L.marker(
+                [49.51719613, 20.40000119],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_d4b4cd52ba657f22a73286d6cc73ba1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_eedf5e1808f1961b7337c45364dc09a4.setIcon(icon_d4b4cd52ba657f22a73286d6cc73ba1c);
+        
+    
+        var popup_7f0501e44fdabaccc57a54271521dbaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_119372a4ae9ebdbdea237ec26d455ec1 = $(`<div id="html_119372a4ae9ebdbdea237ec26d455ec1" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Zakład  Zagospodarowania Odpadów  w  Tylmanowej, osiedle Rzeka 419. _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Usług Komunalnych „EMPOL” Spółka z o.o Oś.  Rzeka  133,  34-451 Tylmanowa _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 30 _____________  Maksymalne moce przerobowe części mechanicznej: 60</div>`)[0];
+            popup_7f0501e44fdabaccc57a54271521dbaa.setContent(html_119372a4ae9ebdbdea237ec26d455ec1);
+        
+
+        marker_eedf5e1808f1961b7337c45364dc09a4.bindPopup(popup_7f0501e44fdabaccc57a54271521dbaa)
+        ;
+
+        
+    
+    
+            marker_eedf5e1808f1961b7337c45364dc09a4.bindTooltip(
+                `<div>
+                     Zakład  Zagospodarowania Odpadów  w  Tylmanowej, osiedle Rzeka 419.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61406f163d498f6dd66a5cb05bdd7262 = L.marker(
+                [49.46936979, 20.05944193],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_9baab3b2eeb636314df96e198b37d43a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_61406f163d498f6dd66a5cb05bdd7262.setIcon(icon_9baab3b2eeb636314df96e198b37d43a);
+        
+    
+        var popup_333658108c71b3e234759264eb7423fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20599f1ab134bbf684cea5eb689ae5a2 = $(`<div id="html_20599f1ab134bbf684cea5eb689ae5a2" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Zakład  Utylizacji  Odpadów w  Nowym  Targu,  ul.  Jana Pawła II 115 _____________  Podmiot ekspoatujący intalację: IB Spółka z o.o. Zakład Pracy  Chronionej  34- 425  Biały  Dunajec,  ul. Miłośników Podhala 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 11 _____________  Maksymalne moce przerobowe części mechanicznej: 70</div>`)[0];
+            popup_333658108c71b3e234759264eb7423fe.setContent(html_20599f1ab134bbf684cea5eb689ae5a2);
+        
+
+        marker_61406f163d498f6dd66a5cb05bdd7262.bindPopup(popup_333658108c71b3e234759264eb7423fe)
+        ;
+
+        
+    
+    
+            marker_61406f163d498f6dd66a5cb05bdd7262.bindTooltip(
+                `<div>
+                     Zakład  Utylizacji  Odpadów w  Nowym  Targu,  ul.  Jana Pawła II 115
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf8c4ad6a7b9b82d6d30fa061402d978 = L.marker(
+                [49.64189887, 20.6942937],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_9d88dbd77d2edcffc491c61f591fe7de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_bf8c4ad6a7b9b82d6d30fa061402d978.setIcon(icon_9d88dbd77d2edcffc491c61f591fe7de);
+        
+    
+        var popup_251779d0fb8eeb9a29e1f71a87dbbb2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcd96961f71ee08046d3fb8be30e6bba = $(`<div id="html_bcd96961f71ee08046d3fb8be30e6bba" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych _____________  Nazwa i adres instalacji: Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Nowym Sączu, ul. Tarnowska 120 _____________  Podmiot ekspoatujący intalację: NOVA Sp. z o.o. 33-300 Nowy Sącz ul. Śniadeckich 14 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: 12.3 _____________  Maksymalne moce przerobowe części mechanicznej: 30</div>`)[0];
+            popup_251779d0fb8eeb9a29e1f71a87dbbb2a.setContent(html_bcd96961f71ee08046d3fb8be30e6bba);
+        
+
+        marker_bf8c4ad6a7b9b82d6d30fa061402d978.bindPopup(popup_251779d0fb8eeb9a29e1f71a87dbbb2a)
+        ;
+
+        
+    
+    
+            marker_bf8c4ad6a7b9b82d6d30fa061402d978.bindTooltip(
+                `<div>
+                     Instalacja  do  mechaniczno- biologicznego przetwarzania zmieszanych  odpadów komunalnych  w  Nowym Sączu, ul. Tarnowska 120
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d647688ded49bb0d43822b095c7c8463 = L.marker(
+                [49.98497112, 20.00415501],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_c55968cf86d601040015cc41d6350205 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d647688ded49bb0d43822b095c7c8463.setIcon(icon_c55968cf86d601040015cc41d6350205);
+        
+    
+        var popup_31e371a44dd75075e2e8613b589141f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eba3658c90d4596fa0d3ca1ebbc10d3 = $(`<div id="html_3eba3658c90d4596fa0d3ca1ebbc10d3" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów Barycz, Kraków, ul. Krzemieniecka 40 _____________  Podmiot ekspoatujący intalację: Miejskie Przedsiębiorstwo Oczyszczania Sp. z o.o. 31-580 Kraków, ul. Nowohucka 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 16 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_31e371a44dd75075e2e8613b589141f6.setContent(html_3eba3658c90d4596fa0d3ca1ebbc10d3);
+        
+
+        marker_d647688ded49bb0d43822b095c7c8463.bindPopup(popup_31e371a44dd75075e2e8613b589141f6)
+        ;
+
+        
+    
+    
+            marker_d647688ded49bb0d43822b095c7c8463.bindTooltip(
+                `<div>
+                     Kompostownia odpadów Barycz, Kraków, ul. Krzemieniecka 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_095ef37de3a1eb3e05b5620289c24509 = L.marker(
+                [50.03165929, 20.02474997],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_3740bd732b0d63eb58547550d4d78ce3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_095ef37de3a1eb3e05b5620289c24509.setIcon(icon_3740bd732b0d63eb58547550d4d78ce3);
+        
+    
+        var popup_87924f8367765d22c6a72c426515e217 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8a6e4e54b0b9a8a2874d083cc7b2585 = $(`<div id="html_e8a6e4e54b0b9a8a2874d083cc7b2585" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów, Kraków, ul. Kosiarzy 5A _____________  Podmiot ekspoatujący intalację: SUEZ MAŁOPOLSKA SP. Z O.O. ul. Kosiarzy 5A, 30-731 Kraków _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 6 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_87924f8367765d22c6a72c426515e217.setContent(html_e8a6e4e54b0b9a8a2874d083cc7b2585);
+        
+
+        marker_095ef37de3a1eb3e05b5620289c24509.bindPopup(popup_87924f8367765d22c6a72c426515e217)
+        ;
+
+        
+    
+    
+            marker_095ef37de3a1eb3e05b5620289c24509.bindTooltip(
+                `<div>
+                     Kompostownia odpadów, Kraków, ul. Kosiarzy 5A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec858b3904cda9861ff2110458cb4677 = L.marker(
+                [49.8707698, 20.21207649],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_01116eac26132210adc3db54714770fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec858b3904cda9861ff2110458cb4677.setIcon(icon_01116eac26132210adc3db54714770fe);
+        
+    
+        var popup_c746c3fedc31907e670177aba3e9ce2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dbd458b0105fd209f5a2da81e664e38 = $(`<div id="html_0dbd458b0105fd209f5a2da81e664e38" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów organicznych w Zalesianach, gm. Gdów _____________  Podmiot ekspoatujący intalację: F.U.H KOP-EKO Szczepan Trzupek Zalesiany 1, 32-420 Gdów _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 12 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_c746c3fedc31907e670177aba3e9ce2b.setContent(html_0dbd458b0105fd209f5a2da81e664e38);
+        
+
+        marker_ec858b3904cda9861ff2110458cb4677.bindPopup(popup_c746c3fedc31907e670177aba3e9ce2b)
+        ;
+
+        
+    
+    
+            marker_ec858b3904cda9861ff2110458cb4677.bindTooltip(
+                `<div>
+                     Kompostownia odpadów organicznych w Zalesianach, gm. Gdów
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9cacff9b1f699081d6f6e2596a9b4d0 = L.marker(
+                [50.03999667, 19.31306346],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_9a75efd22aed7f6dc1484e56913e56c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d9cacff9b1f699081d6f6e2596a9b4d0.setIcon(icon_9a75efd22aed7f6dc1484e56913e56c9);
+        
+    
+        var popup_c45b3359cc993d6f7895e3f832f13cce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10ef705a62ec38882e3e88d7d73ddfc9 = $(`<div id="html_10ef705a62ec38882e3e88d7d73ddfc9" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów zielonych selektywnie zbieranych i bioodpadów w Oświęcimiu, ul. Nadwiślańska _____________  Podmiot ekspoatujący intalację: Składowisko Odpadów Komunalnych Sp. z o.o. w Oświęcimiu ul. Nadwiślańska 36 32-600 Oświęcim _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 2 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_c45b3359cc993d6f7895e3f832f13cce.setContent(html_10ef705a62ec38882e3e88d7d73ddfc9);
+        
+
+        marker_d9cacff9b1f699081d6f6e2596a9b4d0.bindPopup(popup_c45b3359cc993d6f7895e3f832f13cce)
+        ;
+
+        
+    
+    
+            marker_d9cacff9b1f699081d6f6e2596a9b4d0.bindTooltip(
+                `<div>
+                     Kompostownia odpadów zielonych selektywnie zbieranych i bioodpadów w Oświęcimiu, ul. Nadwiślańska
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb4543209f41eaef937184305f4ac286 = L.marker(
+                [50.27232906, 19.4909263],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_0e483bb7d85b5ffb510a68ff1eb2080a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fb4543209f41eaef937184305f4ac286.setIcon(icon_0e483bb7d85b5ffb510a68ff1eb2080a);
+        
+    
+        var popup_89fcc0ef1b4587653aa1cff033a4fa2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7584b1929840e7ad21e25c1c4e9ff18 = $(`<div id="html_a7584b1929840e7ad21e25c1c4e9ff18" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów organicznych w Ujkowie Starym gm. Bolesław _____________  Podmiot ekspoatujący intalację: Zakład Gospodarki Komunalnej Sp. z o.o. 32-329 Bolesław ul. Osadowa 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 5 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_89fcc0ef1b4587653aa1cff033a4fa2a.setContent(html_a7584b1929840e7ad21e25c1c4e9ff18);
+        
+
+        marker_fb4543209f41eaef937184305f4ac286.bindPopup(popup_89fcc0ef1b4587653aa1cff033a4fa2a)
+        ;
+
+        
+    
+    
+            marker_fb4543209f41eaef937184305f4ac286.bindTooltip(
+                `<div>
+                     Kompostownia odpadów organicznych w Ujkowie Starym gm. Bolesław
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26f6cccc7e8ba2e594a10f8ba3c5c548 = L.marker(
+                [49.87289115, 19.43309745],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_b8a94e798748ef9b730be51da42169bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_26f6cccc7e8ba2e594a10f8ba3c5c548.setIcon(icon_b8a94e798748ef9b730be51da42169bb);
+        
+    
+        var popup_72f5a0ecff06f02b58c0432f4c56369b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_749edacfdec5fb73e6060adff88988cf = $(`<div id="html_749edacfdec5fb73e6060adff88988cf" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów zielonych w Choczni, T. Kościuszki 304 _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Komunalne „EKO” Sp. z o.o., ul. T. Kościuszki 304, 34 – 123 Chocznia _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 2.5 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_72f5a0ecff06f02b58c0432f4c56369b.setContent(html_749edacfdec5fb73e6060adff88988cf);
+        
+
+        marker_26f6cccc7e8ba2e594a10f8ba3c5c548.bindPopup(popup_72f5a0ecff06f02b58c0432f4c56369b)
+        ;
+
+        
+    
+    
+            marker_26f6cccc7e8ba2e594a10f8ba3c5c548.bindTooltip(
+                `<div>
+                     Kompostownia odpadów zielonych w Choczni, T. Kościuszki 304
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_012c567657406fbdb4429b605649f82c = L.marker(
+                [50.11440842, 19.37857515],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_9dc42181d1c5773d837bc126135c941f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_012c567657406fbdb4429b605649f82c.setIcon(icon_9dc42181d1c5773d837bc126135c941f);
+        
+    
+        var popup_5628b8d5de7422c2a558c392a3e400de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6f21d125d1ea8aeab7f5d289a94b70a = $(`<div id="html_a6f21d125d1ea8aeab7f5d289a94b70a" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Instalacja do przetwarzania selektywnie zebranych odpadów zielonych i innych bioodpadów w Chrzanowie, ul. Powstańców Styczniowych 15 _____________  Podmiot ekspoatujący intalację: BM Recykling Sp. z o.o. ul. Tkacka 30 34 - 120 Andrychów _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 40 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_5628b8d5de7422c2a558c392a3e400de.setContent(html_a6f21d125d1ea8aeab7f5d289a94b70a);
+        
+
+        marker_012c567657406fbdb4429b605649f82c.bindPopup(popup_5628b8d5de7422c2a558c392a3e400de)
+        ;
+
+        
+    
+    
+            marker_012c567657406fbdb4429b605649f82c.bindTooltip(
+                `<div>
+                     Instalacja do przetwarzania selektywnie zebranych odpadów zielonych i innych bioodpadów w Chrzanowie, ul. Powstańców Styczniowych 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1c2ee7e8a15845727f117319a2a7056 = L.marker(
+                [50.04294351, 21.02522997],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_2ea631f63410ce2d0e017d1c8e18ff1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c1c2ee7e8a15845727f117319a2a7056.setIcon(icon_2ea631f63410ce2d0e017d1c8e18ff1e);
+        
+    
+        var popup_229aaef54094b207383ebb31ae040e9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07b0c8ea5c7a8582229b196ef645c85c = $(`<div id="html_07b0c8ea5c7a8582229b196ef645c85c" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów zielonych selektywnie zebranych w Tarnowie _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Usług Komunalnych Sp. z o.o. w Tarnowie 33-100 Tarnów ul. Komunalna 31 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 6 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_229aaef54094b207383ebb31ae040e9b.setContent(html_07b0c8ea5c7a8582229b196ef645c85c);
+        
+
+        marker_c1c2ee7e8a15845727f117319a2a7056.bindPopup(popup_229aaef54094b207383ebb31ae040e9b)
+        ;
+
+        
+    
+    
+            marker_c1c2ee7e8a15845727f117319a2a7056.bindTooltip(
+                `<div>
+                     Kompostownia odpadów zielonych selektywnie zebranych w Tarnowie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a9848b9de3af18ed60b4eeaea29a022 = L.marker(
+                [49.65833098, 20.68677905],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_e5fb7ab2d9e8d9d8ca7f1fdc0dc36828 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3a9848b9de3af18ed60b4eeaea29a022.setIcon(icon_e5fb7ab2d9e8d9d8ca7f1fdc0dc36828);
+        
+    
+        var popup_71b90d867ac736b1b58c8c7de97c54e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90082855e57918f00125ef15c32323b4 = $(`<div id="html_90082855e57918f00125ef15c32323b4" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów zielonych zebranych selektywnie i organicznych w Nowym Sączu ul. Wiklinowa _____________  Podmiot ekspoatujący intalację: KOMPOSTECH Spółka z o. o. ul. Wiklinowa 4A 33-300 Nowy Sącz _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 26 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_71b90d867ac736b1b58c8c7de97c54e1.setContent(html_90082855e57918f00125ef15c32323b4);
+        
+
+        marker_3a9848b9de3af18ed60b4eeaea29a022.bindPopup(popup_71b90d867ac736b1b58c8c7de97c54e1)
+        ;
+
+        
+    
+    
+            marker_3a9848b9de3af18ed60b4eeaea29a022.bindTooltip(
+                `<div>
+                     Kompostownia odpadów zielonych zebranych selektywnie i organicznych w Nowym Sączu ul. Wiklinowa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4833d63c706034f003c2718c85b59895 = L.marker(
+                [49.88988275, 19.24174881],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_1bf46e1ea443653b275926c9a764dbb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4833d63c706034f003c2718c85b59895.setIcon(icon_1bf46e1ea443653b275926c9a764dbb7);
+        
+    
+        var popup_5a2841a41fb81cbb17db96c8188e554e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67284978b7252e66a29e633ce48f1f7a = $(`<div id="html_67284978b7252e66a29e633ce48f1f7a" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do biologicznego przetwarzania odpadów zielonych i innych bioodpadów _____________  Nazwa i adres instalacji: Kompostownia odpadów zielonych zbieranych selektywnie w Kętach, ul. Kęckie Góry Północne _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Komunalne "KOMAX" Sp. z o.o. 32-650 Kęty ul. Mickiewicza 8 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 2.5 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_5a2841a41fb81cbb17db96c8188e554e.setContent(html_67284978b7252e66a29e633ce48f1f7a);
+        
+
+        marker_4833d63c706034f003c2718c85b59895.bindPopup(popup_5a2841a41fb81cbb17db96c8188e554e)
+        ;
+
+        
+    
+    
+            marker_4833d63c706034f003c2718c85b59895.bindTooltip(
+                `<div>
+                     Kompostownia odpadów zielonych zbieranych selektywnie w Kętach, ul. Kęckie Góry Północne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25c950d31cfe47ec7b6a001a9be38895 = L.marker(
+                [49.98498305, 20.00413326],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_a686a3c5c641df530ed4f2c4fd596953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25c950d31cfe47ec7b6a001a9be38895.setIcon(icon_a686a3c5c641df530ed4f2c4fd596953);
+        
+    
+        var popup_5296984f4d72a2565de42dda2779e85e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b959fec3b8f1bca54545ee964fbde4ee = $(`<div id="html_b959fec3b8f1bca54545ee964fbde4ee" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne Barycz w Krakowie, ul. Krzemieniecka 40 _____________  Podmiot ekspoatujący intalację: Miejskie Przedsiębiorstwo Oczyszczania Sp. z o.o. 31-580 Kraków, ul. Nowohucka 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 623.034 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_5296984f4d72a2565de42dda2779e85e.setContent(html_b959fec3b8f1bca54545ee964fbde4ee);
+        
+
+        marker_25c950d31cfe47ec7b6a001a9be38895.bindPopup(popup_5296984f4d72a2565de42dda2779e85e)
+        ;
+
+        
+    
+    
+            marker_25c950d31cfe47ec7b6a001a9be38895.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne Barycz w Krakowie, ul. Krzemieniecka 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb144d2293ff888d5042c0f571854a8e = L.marker(
+                [49.88990451, 19.24173787],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_da80ed15345728d252157f0bdb84cc48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb144d2293ff888d5042c0f571854a8e.setIcon(icon_da80ed15345728d252157f0bdb84cc48);
+        
+    
+        var popup_530b52497ed7d7c7e9215be53a451b82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca3634d02114c1fdd2335fbeeb6c51e4 = $(`<div id="html_ca3634d02114c1fdd2335fbeeb6c51e4" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Kętach, ul. Kęckie Góry Północne _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Komunalne "KOMAX" Sp. z o.o. 32-650 Kęty ul. Mickiewicza 8 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 74.542 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_530b52497ed7d7c7e9215be53a451b82.setContent(html_ca3634d02114c1fdd2335fbeeb6c51e4);
+        
+
+        marker_cb144d2293ff888d5042c0f571854a8e.bindPopup(popup_530b52497ed7d7c7e9215be53a451b82)
+        ;
+
+        
+    
+    
+            marker_cb144d2293ff888d5042c0f571854a8e.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Kętach, ul. Kęckie Góry Północne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a80e5e048f8c27c47e1306443b6c7779 = L.marker(
+                [50.29397028, 19.49968165],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_b93aa1755aae4a1f41c35d10ac6ca163 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a80e5e048f8c27c47e1306443b6c7779.setIcon(icon_b93aa1755aae4a1f41c35d10ac6ca163);
+        
+    
+        var popup_b50bcdb1d9b07f0a72e884a194aab6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b945994cab33dc2d841f7f0bb3b978b = $(`<div id="html_5b945994cab33dc2d841f7f0bb3b978b" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Ujkowie Starym gm. Bolesław ul. Osadowa 1 _____________  Podmiot ekspoatujący intalację: Zakład Gospodarki Komunalnej Sp. z o.o. 32-329 Bolesław ul. Osadowa 1 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 730 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_b50bcdb1d9b07f0a72e884a194aab6d9.setContent(html_5b945994cab33dc2d841f7f0bb3b978b);
+        
+
+        marker_a80e5e048f8c27c47e1306443b6c7779.bindPopup(popup_b50bcdb1d9b07f0a72e884a194aab6d9)
+        ;
+
+        
+    
+    
+            marker_a80e5e048f8c27c47e1306443b6c7779.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Ujkowie Starym gm. Bolesław ul. Osadowa 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c265eb2a9357dffc961b073b83cbbf22 = L.marker(
+                [49.96781932, 19.16129003],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_178a705a70ff845c1c8fce85e88a046e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c265eb2a9357dffc961b073b83cbbf22.setIcon(icon_178a705a70ff845c1c8fce85e88a046e);
+        
+    
+        var popup_95e604bfb815d53656b7529aece5e6e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b4a213f4b2504108e1f76e486eae0e4 = $(`<div id="html_5b4a213f4b2504108e1f76e486eae0e4" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Brzeszczach, ul. Graniczna 48 _____________  Podmiot ekspoatujący intalację: Agencja Komunalna Sp. z o.o., ul. Kościelna 7, 32-620 Brzeszcze _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 328.99 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_95e604bfb815d53656b7529aece5e6e1.setContent(html_5b4a213f4b2504108e1f76e486eae0e4);
+        
+
+        marker_c265eb2a9357dffc961b073b83cbbf22.bindPopup(popup_95e604bfb815d53656b7529aece5e6e1)
+        ;
+
+        
+    
+    
+            marker_c265eb2a9357dffc961b073b83cbbf22.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Brzeszczach, ul. Graniczna 48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb0b92b58a050801cc5c42f3cefc542f = L.marker(
+                [50.03999625, 19.31307125],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_3ebb2e920a8a960ce57cbb21ddb3024d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bb0b92b58a050801cc5c42f3cefc542f.setIcon(icon_3ebb2e920a8a960ce57cbb21ddb3024d);
+        
+    
+        var popup_ef02daa1bbb8a8088f58e17bcbc5ac3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae8045f123745c101bc04661709b9c81 = $(`<div id="html_ae8045f123745c101bc04661709b9c81" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Oświęcimiu, ul. Nadwiślańska 36 _____________  Podmiot ekspoatujący intalację: Składowisko Odpadów Komunalnych Sp. z o.o. w Oświęcimiu ul. Nadwiślańska 36 32-600 Oświęcim _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 188.672 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_ef02daa1bbb8a8088f58e17bcbc5ac3c.setContent(html_ae8045f123745c101bc04661709b9c81);
+        
+
+        marker_bb0b92b58a050801cc5c42f3cefc542f.bindPopup(popup_ef02daa1bbb8a8088f58e17bcbc5ac3c)
+        ;
+
+        
+    
+    
+            marker_bb0b92b58a050801cc5c42f3cefc542f.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Oświęcimiu, ul. Nadwiślańska 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96d8adfb00b5b2d7ef6b94a6951c391a = L.marker(
+                [50.1567657, 19.36476838],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_f5c53f9ddffe19b06a336b8f21ddf1e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96d8adfb00b5b2d7ef6b94a6951c391a.setIcon(icon_f5c53f9ddffe19b06a336b8f21ddf1e6);
+        
+    
+        var popup_d66a09d1a430cb0ada1c9e1f14aa3a39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67f3bc0e369da4195848e119706481bc = $(`<div id="html_67f3bc0e369da4195848e119706481bc" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w ChrzanowieBalinie, ul. Głogowa 75 _____________  Podmiot ekspoatujący intalację: Zakład Gospodarki Odpadami Komunalnymi Sp. z o.o. 32-500 Chrzanów Balin, ul. Głogowa 75 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 1451.56 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_d66a09d1a430cb0ada1c9e1f14aa3a39.setContent(html_67f3bc0e369da4195848e119706481bc);
+        
+
+        marker_96d8adfb00b5b2d7ef6b94a6951c391a.bindPopup(popup_d66a09d1a430cb0ada1c9e1f14aa3a39)
+        ;
+
+        
+    
+    
+            marker_96d8adfb00b5b2d7ef6b94a6951c391a.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w ChrzanowieBalinie, ul. Głogowa 75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1422f54c125b319e59b8625e2f039826 = L.marker(
+                [50.04293059, 21.02513675],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_6231ba617856bf326d3a932b58cf516c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1422f54c125b319e59b8625e2f039826.setIcon(icon_6231ba617856bf326d3a932b58cf516c);
+        
+    
+        var popup_d67f0c2d508908a80a85987b4b670ac7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24ca0928e0b084092bd47a52c2414592 = $(`<div id="html_24ca0928e0b084092bd47a52c2414592" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Tarnowie, ul. Komunalna _____________  Podmiot ekspoatujący intalację: Przedsiębiorstwo Usług Komunalnych Sp. z o.o. w Tarnowie 33-100 Tarnów ul. Komunalna 31 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 85.422 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_d67f0c2d508908a80a85987b4b670ac7.setContent(html_24ca0928e0b084092bd47a52c2414592);
+        
+
+        marker_1422f54c125b319e59b8625e2f039826.bindPopup(popup_d67f0c2d508908a80a85987b4b670ac7)
+        ;
+
+        
+    
+    
+            marker_1422f54c125b319e59b8625e2f039826.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Tarnowie, ul. Komunalna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_882323484c2758a9de381901c5fb5f5a = L.marker(
+                [50.0217449, 20.94188078],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_34036842a97a8df7a481266743e646c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_882323484c2758a9de381901c5fb5f5a.setIcon(icon_34036842a97a8df7a481266743e646c0);
+        
+    
+        var popup_1fe26cecf2841892cd81c33b829e5267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_507b1fdc649807c011de7f98d9bc2b60 = $(`<div id="html_507b1fdc649807c011de7f98d9bc2b60" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne „Za rzeką Biała” w Tarnowie ul. Czysta _____________  Podmiot ekspoatujący intalację: Grupa Azoty JRCH Sp. z o.o. ul. E. Kwiatkowskiego 8 33-101 Tarnów _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 171.042 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_1fe26cecf2841892cd81c33b829e5267.setContent(html_507b1fdc649807c011de7f98d9bc2b60);
+        
+
+        marker_882323484c2758a9de381901c5fb5f5a.bindPopup(popup_1fe26cecf2841892cd81c33b829e5267)
+        ;
+
+        
+    
+    
+            marker_882323484c2758a9de381901c5fb5f5a.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne „Za rzeką Biała” w Tarnowie ul. Czysta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae5ea96b2ddaafcc406508ee03abd505 = L.marker(
+                [49.85790439, 19.9680245],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_cfa98b1d8e6a16e2e6916c0cbe230e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae5ea96b2ddaafcc406508ee03abd505.setIcon(icon_cfa98b1d8e6a16e2e6916c0cbe230e33);
+        
+    
+        var popup_36f9aa15ead185d60087730ed8e06107 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aea41450159de05c54f76607c43c6426 = $(`<div id="html_aea41450159de05c54f76607c43c6426" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Myślenicach, ul. Ujejskiego 341 _____________  Podmiot ekspoatujący intalację: Zakład Utylizacji Odpadów Sp. z o.o. 32- 400 Myślenice, ul. Słowackiego 82 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 220 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_36f9aa15ead185d60087730ed8e06107.setContent(html_aea41450159de05c54f76607c43c6426);
+        
+
+        marker_ae5ea96b2ddaafcc406508ee03abd505.bindPopup(popup_36f9aa15ead185d60087730ed8e06107)
+        ;
+
+        
+    
+    
+            marker_ae5ea96b2ddaafcc406508ee03abd505.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Myślenicach, ul. Ujejskiego 341
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e74d42456905d6c68c7b7fc003571d6c = L.marker(
+                [49.64190486, 20.6944193],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_ca60b1a69b0b5b20491bfb2e8d019b5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e74d42456905d6c68c7b7fc003571d6c.setIcon(icon_ca60b1a69b0b5b20491bfb2e8d019b5b);
+        
+    
+        var popup_c490d23321e6ddb8ced912dfdf066b90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd62b06970e0d9f07492b658c30d5950 = $(`<div id="html_bd62b06970e0d9f07492b658c30d5950" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Nowym Sączu, ul. Tarnowska 120 _____________  Podmiot ekspoatujący intalację: NOVA Sp. z o.o. 33-300 Nowy Sącz ul. Śniadeckich 14 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 153.132 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_c490d23321e6ddb8ced912dfdf066b90.setContent(html_bd62b06970e0d9f07492b658c30d5950);
+        
+
+        marker_e74d42456905d6c68c7b7fc003571d6c.bindPopup(popup_c490d23321e6ddb8ced912dfdf066b90)
+        ;
+
+        
+    
+    
+            marker_e74d42456905d6c68c7b7fc003571d6c.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Nowym Sączu, ul. Tarnowska 120
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11ac029e7b82336aec8399839e83198e = L.marker(
+                [49.56958609, 20.61670195],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_7a40c9cd44c7cd22fc78b5cd2f67cca6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_11ac029e7b82336aec8399839e83198e.setIcon(icon_7a40c9cd44c7cd22fc78b5cd2f67cca6);
+        
+    
+        var popup_f7f33a464ff0043e19c0b0e8729d35dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab44b5b97d29a1877d2bd59680ca9f51 = $(`<div id="html_ab44b5b97d29a1877d2bd59680ca9f51" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Starym Sączu _____________  Podmiot ekspoatujący intalację: Zakład Składowania Odpadów Sp. z o.o. w Starym Sączu 33-340 Stary Sącz ul. Stefana Batorego 25 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 134.932 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_f7f33a464ff0043e19c0b0e8729d35dc.setContent(html_ab44b5b97d29a1877d2bd59680ca9f51);
+        
+
+        marker_11ac029e7b82336aec8399839e83198e.bindPopup(popup_f7f33a464ff0043e19c0b0e8729d35dc)
+        ;
+
+        
+    
+    
+            marker_11ac029e7b82336aec8399839e83198e.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Starym Sączu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ef9110a2f9012f05f7d9d4209061ccc = L.marker(
+                [50.17296605, 19.47505007],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_100abe7e84cef8d52a97ac96adc6ab0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9ef9110a2f9012f05f7d9d4209061ccc.setIcon(icon_100abe7e84cef8d52a97ac96adc6ab0e);
+        
+    
+        var popup_328cbedf794075b1b6a6fef28a3dfeb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1d1b5ddf2d8c014d1ded19ee77596e = $(`<div id="html_ee1d1b5ddf2d8c014d1ded19ee77596e" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętnych w Trzebini ul. Piłsudskiego, Trzebinia 32-540 _____________  Podmiot ekspoatujący intalację: Usługi Komunalne „Trzebinia” Sp. z o.o. Rynek 18 32-540 Trzebinia _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 0 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_328cbedf794075b1b6a6fef28a3dfeb5.setContent(html_ee1d1b5ddf2d8c014d1ded19ee77596e);
+        
+
+        marker_9ef9110a2f9012f05f7d9d4209061ccc.bindPopup(popup_328cbedf794075b1b6a6fef28a3dfeb5)
+        ;
+
+        
+    
+    
+            marker_9ef9110a2f9012f05f7d9d4209061ccc.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętnych w Trzebini ul. Piłsudskiego, Trzebinia 32-540
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25e658c91526e40784e6785fc5e8eee0 = L.marker(
+                [49.29917348, 20.01210138],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_92b208a13d4cb00cd10a1ba97f831f45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25e658c91526e40784e6785fc5e8eee0.setIcon(icon_92b208a13d4cb00cd10a1ba97f831f45);
+        
+    
+        var popup_c7096cd2b23d3bfd4a0be8dc39b9ef88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e95126c724b0d97198f986533b74e5b3 = $(`<div id="html_e95126c724b0d97198f986533b74e5b3" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Regionalne instalacje do składowania odpadów powstających w procesie mechaniczno-biologicznego przetwarzania zmieszanych odpadów komunalnych oraz pozostałości z sortowania odpadów komunalnych _____________  Nazwa i adres instalacji: Składowisko odpadów innych niż niebezpieczne i obojętne w Zakopanem ul. Gawlaki 25 _____________  Podmiot ekspoatujący intalację: "TESKO" Tatrzańska Komunalna Grupa Kapitałowa Sp. z o.o. ul. Szymony 17a 34-500 Zakopane _____________  Maksymalne moce przerobowe [tys. Mg/rok]: - _____________  Pojemność dyspozycyjn [tys/m3]: 112.08 _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_c7096cd2b23d3bfd4a0be8dc39b9ef88.setContent(html_e95126c724b0d97198f986533b74e5b3);
+        
+
+        marker_25e658c91526e40784e6785fc5e8eee0.bindPopup(popup_c7096cd2b23d3bfd4a0be8dc39b9ef88)
+        ;
+
+        
+    
+    
+            marker_25e658c91526e40784e6785fc5e8eee0.bindTooltip(
+                `<div>
+                     Składowisko odpadów innych niż niebezpieczne i obojętne w Zakopanem ul. Gawlaki 25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99c1d827c17f34560bb5b465540ba4ad = L.marker(
+                [50.06226469, 20.08163837],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_fd24ebf733b4853e85c92c26972de1f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_99c1d827c17f34560bb5b465540ba4ad.setIcon(icon_fd24ebf733b4853e85c92c26972de1f2);
+        
+    
+        var popup_8bf78832118d46f2c7b92fa685f5afcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caa70a345e14b4d7fc94da9fb01ba36a = $(`<div id="html_caa70a345e14b4d7fc94da9fb01ba36a" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Instalacja Termicznego Przekształcania Odpadów Komunalnych _____________  Nazwa i adres instalacji: Zakład Termicznego Przekształcania Odpadów (ZTPO) w Krakowie, ul. Jerzego Giedroycia, Kraków _____________  Podmiot ekspoatujący intalację: Krakowski Holding Komunalny Spółka Akcyjna w Krakowie 30-347 Kraków, ul. Jana Brożka 3 _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 220 _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: aktywna _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_8bf78832118d46f2c7b92fa685f5afcb.setContent(html_caa70a345e14b4d7fc94da9fb01ba36a);
+        
+
+        marker_99c1d827c17f34560bb5b465540ba4ad.bindPopup(popup_8bf78832118d46f2c7b92fa685f5afcb)
+        ;
+
+        
+    
+    
+            marker_99c1d827c17f34560bb5b465540ba4ad.bindTooltip(
+                `<div>
+                     Zakład Termicznego Przekształcania Odpadów (ZTPO) w Krakowie, ul. Jerzego Giedroycia, Kraków
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f345c3c6394a7547c78864d7738297fb = L.marker(
+                [50.0363819747685, 19.2542081779482],
+                {}
+            ).addTo(map_5d013d916b803552dd5f2ac656f4a344);
+        
+    
+            var icon_1e94642dd3194931cef11412d79d1367 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_f345c3c6394a7547c78864d7738297fb.setIcon(icon_1e94642dd3194931cef11412d79d1367);
+        
+    
+        var popup_92193381b5a0c236c37ad42bfb1e6ef4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4fa1858ca60a71cb598c70b521ac02a = $(`<div id="html_d4fa1858ca60a71cb598c70b521ac02a" style="width: 100.0%; height: 100.0%;">Rodzaj instalacji:Instalacja Termicznego Przekształcania Odpadów Komunalnych - planowana _____________  Nazwa i adres instalacji: Zakład Termicznego Przekształcania Odpadów (ZTPO) w Oświęcimiu, ul. Chemików 1, Oświęcim _____________  Podmiot ekspoatujący intalację: Synthos Dwory 7 Sp. z o.o. Sj. działająca w ramach konsorcjum: Synthos S.A., Synthos Dwory 7 Sp. z o.o. Sj., Miejsko-Przemysłowa Oczyszczalnia Ścieków Sp. z o.o. _____________  Maksymalne moce przerobowe [tys. Mg/rok]: 150 20 03 01: 40 tys. Mg/rok 19 08 05, 19 08 14: 20 tys. Mg/rok 19 12 12: od 2020 roku dopełnienie do 30% masy termicznie przekształcanych odpadów komunalnych oraz odpadów pochodzących z przetworzenia odpadów komunalnych w stosunku do wytworzonych _____________  Pojemność dyspozycyjn [tys/m3]: - _____________  Status: planowane otwarcie w 2020 _____________  Maksymalne moce przerobowe części biologicznej: - _____________  Maksymalne moce przerobowe części mechanicznej: -</div>`)[0];
+            popup_92193381b5a0c236c37ad42bfb1e6ef4.setContent(html_d4fa1858ca60a71cb598c70b521ac02a);
+        
+
+        marker_f345c3c6394a7547c78864d7738297fb.bindPopup(popup_92193381b5a0c236c37ad42bfb1e6ef4)
+        ;
+
+        
+    
+    
+            marker_f345c3c6394a7547c78864d7738297fb.bindTooltip(
+                `<div>
+                     Zakład Termicznego Przekształcania Odpadów (ZTPO) w Oświęcimiu, ul. Chemików 1, Oświęcim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
